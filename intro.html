@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet"href="css/user_side.css">
+    <script src="js/article.js"></script>
+
+        <link rel="stylesheet"href="css/animate.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    </head>
+
+
+    <body>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+    <a href="#"><?php echo $username ?></a>
+    <a href="users.php">Home</a>
+  <a href="english_quiz.php">English Quiz</a>
+  <a href="language_quiz.php">Language quiz</a>
+  <a href="recharge.html">Recharge</a>
+    <a href="#">Transaction</a>
+    <a href="#">Settting</a>
+    <a href="#">Logout</a>
+</div>
+
+<div id="main">
+
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+</div>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+    document.body.style.backgroundColor = "white";
+}
+</script>
+
+    <div class="container animate animated fadeInDown">
+        Greedy Approach
+This project is applicable to utilize knowledge of all the users and play quiz that too with a amazing features of winning free mobile recharge
+
+
+        Each correct attempted question will give Rs0.03 and incorrect attempted will give Rs 0.02.
+Each refer will give Rs 2 when refered person gets his first recharge..<br><br>
+
+
+        </div>
+    </body>
+    </html>
